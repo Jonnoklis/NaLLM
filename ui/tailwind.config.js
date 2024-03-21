@@ -5,7 +5,12 @@ export default {
   presets: [require("@neo4j-ndl/base").tailwindConfig],
   prefix: "",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'bg-light': '#242424',
+        'text-light': '#dbdbdb',
+      },
+    },
   },
   // The preset has this safelist, but with the "n-" prefix. Should be removed eventually as per
   safelist: [
